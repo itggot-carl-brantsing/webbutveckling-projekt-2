@@ -7,24 +7,58 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
 </head>
 <body>
+    
     <header>
-        <p>JUL</p>
+        <!-- <p>JUL</p> -->
+        <div class="wrapper">
+                <div class="menu-button" onclick="showMenu()">
+                <i class="material-icons">menu</i>
+         </div>
     </header>
-    <div class="meny"></div>
+
     <nav> 
-        <div class="div">
-            <div class="p">pynta</div>
-            <div class="p">buy</div>
-        </div>
-    </nav>
-    <main><!-- <div class="gran">
+    <div class="div">
+        <a id="button" href="pynta.html"> <div class="p">pynta</div></a>
+        <div class="p" href="buy.html">buy</div>
+    </div>
+</nav>
+<main>
+    <img id="picture" src="img/tree.jpg"/>
+
+    <main>
+    <div class="box">
+        <p>
+                Julpynt är de dekorationer som människor dekorerar hus och hem med i juletider. Ofta består julpynt av julgran, adventsljusstakar, adventsstjärna, prydnadstomtar, julbockar, julgardiner, ljusslinga, julkrubba och förr i tiden även av små handgjorda skulpturer.
+        </p>
+    </div>
+
+    </main>
+</main>
+
+
+    <div class="menu">
+        <ul>
+            <h1>OM MIG:</h1>
+
+            <li>Mitt namn ar oviktigt</li>
+            <li>Min alder ar oviltig</li>
+            <li>Mitt mal ar oviktigt</li>
+            <li>Mitt land ar oviktigt</li>
+            <li>Min jultradition ar oviktig</li>
+            <li>Allt som ar viktigt ar pynt</li>
+
+            <H1>GOD JUL</H1>
+            
+        </ul>
+    </div>
     
-</div> -->
-<img id="picture" src="img/tree.jpg"/></main>
+    <div class="fade-layer" onclick="showMenu()"></div>
     
-    
-</body>
-</html>
+    <script src="js/main.js"></script>    
+    </body>
+    </html>
+    

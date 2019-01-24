@@ -1,14 +1,11 @@
-body 
+body, 
     margin: 0
     min-height: 100vh
-.wrapper
-    min-height: 100vh
-    background-color: blue 
+
 header 
     height: 30vh
     display: flex
     background-image: url(../img/lol_cropped.jpg)
-    justify-content: center
     background-repeat: 0
     background-size: cover
 nav 
@@ -35,16 +32,12 @@ nav
 
 p 
     font-family: 'Roboto' sans-serif
-    font-size: 3,6rem
+    font-size: 1.45rem
     font-weight: 1000
     color: white
     margin: 25px
+    justify-content: center
 
-.meny 
-
-    position: sticky
-    top: 0
-    left: 0
 
 .p 
     // font-family: 'Roboto' sans-serif
@@ -62,11 +55,73 @@ p
     justify-content: center
     align-items: center
 
+.box
+    width: 80%
+    height: 400px      
+    position: absolute
+    top: 40vh
+    left: 10%
+    background-color: rgba(255,255,255,0.5)
+    p
+        color: black
+    
+  
+        
+
 main 
     height: 100%
+
 
 #picture
     height: 80vh
     width: 100vw
     background-size: contain
     background-repeat: no-repeat
+
+
+.menu 
+    height: 100vh
+    width: 80vw
+    background-color: white 
+    position: fixed
+    top: 0
+    left: -90vw
+    transition: left 0.3s
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75)
+    z-index: 10
+    p
+        color: black
+    li 
+        font-size: 2rem
+        font-weight: 900
+        color: black
+   
+
+.menu-button
+    cursor: pointer
+    display: inline
+
+
+.menu-button i.material-icons
+    font-size: 2.5rem
+
+
+.show
+    left: 0
+
+
+.fade-layer
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(0,0,0,0.5)
+    display: none
+    z-index: 5
+
+
+.fade-layer.visible
+    display: block
+
+    

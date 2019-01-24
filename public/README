@@ -7,20 +7,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
 </head>
 <body>
+    
     <header>
-        <p>JUL</p>
+        <!-- <p>JUL</p> -->
+        <div class="wrapper">
+                <div class="menu-button" onclick="showMenu()">
+                <i class="material-icons">menu</i>
+         </div>
     </header>
-    <div class="meny"></div>
-    <nav> 
-        <div class="div">
-            <div class="p">pynta</div>
-            <div class="p">buy</div>
-        </div>
-    </nav>
-    <main><h1>webbutveckling-projekt-2</h1>
+
+    <h1>webbutveckling-projekt-2</h1>
 
 <h2>Tema</h2>
 
@@ -72,8 +72,27 @@
 | Implementering    |<strong>Tillsammans med läraren</strong> implementerar du din projektplan och felsöker produkten.|<strong>Med läraren som bollplank</strong> implementerar du en tänkt produkt och felsöker produkten <strong>systematiskt</strong> .|<strong>Med läraren som bollplank</strong> implementerar du <strong>effektivt</strong> en tänkt produkt <strong>som använder DOM-skript</strong>, och felsöker produkten <strong>systematiskt och effektivt</strong>.|
 | Optimering        |<strong>Tillsammans med läraren</strong> gör du <strong>någon enkel</strong> optimering för överföring av antal och storlek på resurser.|<strong>Med läraren som bollplank</strong> gör du  <strong>flera</strong> optimeringar för överföring av antal och storlek på resurser.|~~<strong>Med läraren som bollplank</strong> gör du <strong>flera</strong> optimeringar för överföring av antal och storlek på resurser.~~ |
 | Anpassning        |<strong>Tillsammans med läraren</strong> anpassar du produkt för <strong>någon</strong> enhet och anpassar media för denna enhet.|<strong>Med läraren som bollplank</strong> anpassar du din produkt för <strong>flera</strong> enheter och anpassar media för dessa enheter.|<strong>Med läraren som bollplank</strong> anpassar du din produkt för <strong>flera</strong> enheter och <strong>på ett effektivt sätt</strong>  anpassar media till dessa enheter.|</p>
-</main>
+
+
+    <div class="menu">
+        <ul>
+            <h1>OM MIG:</h1>
+
+            <li>Mitt namn ar oviktigt</li>
+            <li>Min alder ar oviltig</li>
+            <li>Mitt mal ar oviktigt</li>
+            <li>Mitt land ar oviktigt</li>
+            <li>Min jultradition ar oviktig</li>
+            <li>Allt som ar viktigt ar pynt</li>
+
+            <H1>GOD JUL</H1>
+            
+        </ul>
+    </div>
     
+    <div class="fade-layer" onclick="showMenu()"></div>
     
-</body>
-</html>
+    <script src="js/main.js"></script>    
+    </body>
+    </html>
+    
