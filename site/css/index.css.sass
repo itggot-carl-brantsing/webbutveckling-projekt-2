@@ -1,13 +1,22 @@
 body, 
     margin: 0
     min-height: 100vh
+    max-width: 100%
+    display: grid 
+    grid-template-rows: auto 0 auto
+    grid-template-areas: "header" "nav" "main"
+    
+    
 
 header 
-    height: 30vh
+    height: 100%
     display: flex
     background-image: url(../img/lol_cropped.jpg)
     background-repeat: 0
-    background-size: cover
+    background-size: cover 
+    grid-area: header
+    
+   
 nav 
     height: 40px
     margin-top: -40px 
@@ -16,18 +25,12 @@ nav
     background-color: rgba(255,255,255,0.5)
     position: sticky
     top: 0
+    grid-area: nav 
 
 .div
-    // font-family: 'Roboto' sans-serif
-    // font-size: 1,2rem
-    // font-weight: 1000
-    // color: black
-    // padding: 20px 
-    // background-color: grey
     display: flex
     justify-content: center
     align-items: center
-    
 
 
 p 
@@ -51,6 +54,10 @@ p
     justify-content: center
     align-items: center
 
+.p:hover
+    background-color: white
+    color: black
+
 .box
     width: 80%
     height: 400px      
@@ -60,12 +67,40 @@ p
     background-color: rgba(255,255,255,0.5)
     p
         color: black
-    
+.box2
+    width: 80%
+    height: 450px      
+    position: absolute
+    top: 95vh
+    left: 10%
+    display: none
+    background-color: rgba(255,255,255,0.5)
+    p
+        color: black
   
-        
+.box3
+    width: 80%
+    height: 350px      
+    position: absolute
+    top: 169vh
+    left: 10%
+    display: none
+    background-color: rgba(255,255,255,0.5)
+    p
+        color: black    
+
+
 
 main 
-    height: 100%
+    background-color: white
+    grid-area: main
+    #picture 
+        height: 100%
+
+    #picture1
+        height: 100%
+    
+    
 
 
 #picture
@@ -73,6 +108,31 @@ main
     width: 100vw
     background-size: contain
     background-repeat: no-repeat
+
+#picture1
+    height: 80vh
+    width: 100vw
+    background-size: contain
+    background-repeat: no-repeat
+
+#picture2 
+    position: absolute 
+    top: 85vh
+    
+
+#picture3
+    position: absolute
+    top: 20vh
+    left: 36%
+
+.textpynta 
+    width: 100px
+    height: 50px 
+    background-color: rgba(255,255,255,0.5)
+    position: absolute
+    top: 80vh
+
+    
 
 
 .menu 
@@ -120,5 +180,54 @@ main
 .fade-layer.visible
     display: block
 
-a 
+
+.content
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    height: 60vh
+
+
     
+    p 
+        color: black
+        margin: 15px
+        text-align: center
+   
+    a
+        width: 40%
+        margin-right: 8px
+        margin-top: 50px
+    a
+        cursor: pointer
+        display: inline   
+    a:hover
+        box-shadow: 0px 30px 40px rgba(255, 0, 0, 0.2)
+        
+        
+    img 
+        width: 100%
+        margin: 30px
+    
+
+@media only screen  and (min-width : 1225px) 
+    .menu
+        width: 33vh 
+    
+    header 
+        height: 48vh
+    .box 
+        height: 125px
+        position: absolute
+        top: 70vh
+    main 
+        
+    #picture3
+        position: absolute
+        top: 50vh 
+        left: 45%
+    .box2
+        display: block
+
+    .box3 
+        display: block
